@@ -18,9 +18,7 @@
     <div class="product-card-info">
       <h3 class="product-card-title">{{ p.nome | escape }}</h3>
 
-      <p class="product-card-subtitle">
-        {{ p.descricao | escape }}
-      </p>
+      <p class="product-card-subtitle">{{ p.descricao | escape }}</p>
 
       {% assign links = p.links %}
 

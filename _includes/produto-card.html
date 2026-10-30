@@ -1,36 +1,33 @@
 
-{% assign p = page.produto %}
+{% assign produto_id = include.id | default: page.produto_id %}
+{% assign p = site.data.produtos[produto_id] %}
 
 {% if p %}
 <div class="product-card-affiliate">
   <div class="product-card-body">
 
-    {% if p.imagem %}
     <div class="product-card-img">
+      {% if p.imagem and p.imagem != "" %}
       <img
         src="{{ p.imagem | relative_url }}"
         alt="{{ p.nome | escape }}"
         loading="lazy">
+      {% endif %}
     </div>
-    {% endif %}
 
     <div class="product-card-info">
-      <h3 class="product-card-title">
-        {{ p.nome | escape }}
-      </h3>
+      <h3 class="product-card-title">{{ p.nome | escape }}</h3>
 
-      {% if p.descricao %}
       <p class="product-card-subtitle">
         {{ p.descricao | escape }}
       </p>
-      {% endif %}
 
       {% assign links = p.links %}
 
-      {% if links.amazon != blank or links.mercadolivre != blank or links.shopee != blank %}
+      {% if links.amazon or links.mercadolivre or links.shopee %}
       <div class="product-card-buttons">
 
-        {% if links.amazon != blank %}
+        {% if links.amazon %}
         <a href="{{ links.amazon | escape }}"
            target="_blank"
            rel="sponsored nofollow noopener noreferrer"
@@ -39,7 +36,7 @@
         </a>
         {% endif %}
 
-        {% if links.mercadolivre != blank %}
+        {% if links.mercadolivre %}
         <a href="{{ links.mercadolivre | escape }}"
            target="_blank"
            rel="sponsored nofollow noopener noreferrer"
@@ -48,7 +45,7 @@
         </a>
         {% endif %}
 
-        {% if links.shopee != blank %}
+        {% if links.shopee %}
         <a href="{{ links.shopee | escape }}"
            target="_blank"
            rel="sponsored nofollow noopener noreferrer"
@@ -59,8 +56,8 @@
 
       </div>
       {% endif %}
-
     </div>
+
   </div>
 </div>
 {% endif %}

@@ -1,108 +1,85 @@
 ---
 layout: post
-title: "Review Black+Decker BCD704C1: Vale a Pena em 2026? Análise Completa!"
-description: "Análise completa da Black+Decker BCD704C1: torque de 42 Nm, mandril metálico e função impacto. Descubra se essa furadeira 20V MAX vale a pena em 2026."
-slug: "review-black-decker-bcd704c1"
-categories: [furadeiras, reviews]
-image: "/assets/images/posts/black-decker-bcd704c1.webp"
-date: 2026-10-24
-author: "Equipe de Análises"
+title: 'Review Black+Decker BCD704C1: Vale a Pena em 2026? Análise Completa!'
+description: 'Análise completa da Black+Decker BCD704C1: torque de 42 Nm, mandril metálico e função impacto. Descubra
+  se essa furadeira 20V MAX vale a pena em 2026.'
+slug: review-black-decker-bcd704c1
+categories:
+- furadeiras
+- reviews
+image: /assets/images/posts/black-decker-bcd704c1.webp
+date: '2026-10-24'
+author: Equipe de Análises
+avaliacao:
+  nota: 8.5
+  resumo: O Black+Decker BCD704C1 destaca-se por oferecer torque de 42 Nm, mandril todo em metal e função impacto
+    em um kit completo com maleta rígida, consolidando-se como porta de entrada qualificada para o ecossistema 20V
+    MAX. Sua nota geral consolidada é 8.5 de 10 .
+  vantagens:
+  - Mandril de 10 mm todo em metal, raro na categoria de entrada
+  - Torque de 42 Nm e 11 posições de embreagem para parafusamento preciso
+  - Ergonomia equilibrada com 1,4 kg e gatilho progressivo macio
+  - Plataforma 20V MAX com baterias intercambiáveis para toda a linha
+  - Kit completo com maleta rígida e carregador bivolt
+  desvantagens:
+  - Bateria de 1.5 Ah limita a autonomia em uso contínuo
+  - Ausência de freio eletrônico obriga a esperar o mandril parar
+  - Ruído e vibração no modo impacto após uso prolongado
+  - Carregador sem indicador de porcentagem de carga
+ficha_tecnica:
+- campo: Categoria
+  valor: Reviews
+- campo: Modelo
+  valor: BCD704C1
+- campo: Voltagem / Alimentação
+  valor: 20V MAX (18V Nominal) — Bateria 1.5 Ah (LB1R5)
+- campo: Tipo
+  valor: Furadeira/Parafusadeira de Impacto a Bateria
+- campo: Mandril
+  valor: Aperto rápido 10 mm (3/8") — todo em metal
+- campo: Torque / Potência
+  valor: 42 Nm (máximo)
+- campo: Rotação / RPM
+  valor: '2 velocidades: 0–450 / 0–1.500 RPM'
+- campo: Função Impacto
+  valor: Sim (até 22.500 IPM)
+- campo: Configurações de Torque
+  valor: 11 posições + perfuração + impacto
+- campo: Motor
+  valor: Escovas (Brushed)
+- campo: Carregador
+  valor: Bivolt automático (LC1120)
+- campo: Peso Líquido
+  valor: Aprox. 1,4 kg (com bateria)
+- campo: Destaque Principal
+  valor: Mandril todo em metal de 10 mm com função impacto
+- campo: Iluminação
+  valor: LED integrado na base
+- campo: Garantia
+  valor: 2 anos (1 ano + 1 ano mediante registro)
+produto:
+  nome: Black+Decker BCD704C1
+  descricao: Furadeira/parafusadeira de impacto 20V MAX com mandril metálico de 10 mm e 42 Nm
+  imagem: /assets/images/posts/black-decker-bcd704c1.webp
+  links:
+    amazon: null
+    mercadolivre: null
+    shopee: null
 ---
 
-<div class="toc-box" style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; margin: 25px 0;">
-  <h3 style="margin-top:0; font-size: 1.1rem; color: #0f172a;">📍 Neste Artigo:</h3>
-  <ul style="margin-bottom:0; padding-left: 20px; color: #005f87;">
-    <li><a href="#resumo-executivo">Resumo Executivo e Nota</a></li>
-    <li><a href="#ficha-tecnica">Ficha Técnica Completa</a></li>
-    <li><a href="#construcao-e-ergonomia">Proposta de Mercado, Construção e Ergonomia</a></li>
-    <li><a href="#desempenho-pratico">Desempenho Técnico em Cenários Reais</a></li>
-    <li><a href="#opiniao-dos-compradores">O Que Dizem os Compradores (ML, Amazon, Shopee)</a></li>
-    <li><a href="#concorrentes-diretos">Comparativo de Mercado</a></li>
-    <li><a href="#perguntas-frequentes">Perguntas Frequentes</a></li>
-    <li><a href="#veredito-final">Veredito Final e Recomendação de Compra</a></li>
-  </ul>
-</div>
+
+{% include review-toc.html %}
+
+> **Transparência:** quando houver links de afiliados, poderemos receber uma comissão por compras qualificadas, sem custo adicional para você.
+
 
 A Black+Decker BCD704C1 chega ao mercado como uma proposta consolidada dentro do ecossistema 20V MAX da marca, posicionando-se como uma furadeira e parafusadeira de entrada robusta para o usuário doméstico exigente e para o profissional que busca uma ferramenta leve para aplicações leves e médias. Este modelo entrega a versatilidade de dois modos de operação — perfuração e parafusamento — com a adição da função impacto, o que amplia consideravelmente seu leque de aplicações em alvenaria leve. O veredito rápido aponta para um equipamento equilibrado: torque suficiente para a grande maioria das tarefas residenciais, ergonomia bem resolvida e a confiabilidade da plataforma de baterias intercambiáveis.
 
-<div id="resumo-executivo" class="review-summary-card">
-  <div class="review-summary-header">
-    <div class="score-badge-box">
-      <span class="score-number-val">8.5</span>
-      <span class="score-label-txt">NOTA GERAL</span>
-    </div>
-    <div class="review-summary-text">
-      <h3>Avaliação Geral</h3>
-      <p>O <strong>Black+Decker BCD704C1</strong> destaca-se por oferecer torque de 42 Nm, mandril todo em metal e função impacto em um kit completo com maleta rígida, consolidando-se como porta de entrada qualificada para o ecossistema 20V MAX. Sua nota geral consolidada é <strong>8.5 de 10</strong>.</p>
-    </div>
-  </div>
+{% include review-resumo.html %}
 
-  <div class="pros-cons-grid">
-    <div class="pros-box">
-      <h4>👍 Benefícios</h4>
-      <ul>
-        <li>Mandril de 10 mm todo em metal, raro na categoria de entrada</li>
-        <li>Torque de 42 Nm e 11 posições de embreagem para parafusamento preciso</li>
-        <li>Ergonomia equilibrada com 1,4 kg e gatilho progressivo macio</li>
-        <li>Plataforma 20V MAX com baterias intercambiáveis para toda a linha</li>
-        <li>Kit completo com maleta rígida e carregador bivolt</li>
-      </ul>
-    </div>
-    <div class="cons-box">
-      <h4>👎 O Que Considerar</h4>
-      <ul>
-        <li>Bateria de 1.5 Ah limita a autonomia em uso contínuo</li>
-        <li>Ausência de freio eletrônico obriga a esperar o mandril parar</li>
-        <li>Ruído e vibração no modo impacto após uso prolongado</li>
-        <li>Carregador sem indicador de porcentagem de carga</li>
-      </ul>
-    </div>
-  </div>
-</div>
+{% include ficha-tecnica.html %}
 
-<div id="ficha-tecnica" class="specs-table-wrapper" style="margin-top: 30px;">
-  <table class="specs-table" style="width: 100%; border-collapse: collapse;">
-    <thead>
-      <tr style="background-color: #0f172a; color: #ffffff;">
-        <th colspan="2" style="padding: 12px; text-align: left;">Ficha Técnica Oficial: Black+Decker BCD704C1</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Categoria</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Reviews</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Modelo</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">BCD704C1</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Voltagem / Alimentação</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">20V MAX (18V Nominal) — Bateria 1.5 Ah (LB1R5)</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Tipo</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Furadeira/Parafusadeira de Impacto a Bateria</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Mandril</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Aperto rápido 10 mm (3/8") — todo em metal</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Torque / Potência</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">42 Nm (máximo)</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Rotação / RPM</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">2 velocidades: 0–450 / 0–1.500 RPM</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Função Impacto</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Sim (até 22.500 IPM)</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Configurações de Torque</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">11 posições + perfuração + impacto</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Motor</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Escovas (Brushed)</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Carregador</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Bivolt automático (LC1120)</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Peso Líquido</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Aprox. 1,4 kg (com bateria)</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Destaque Principal</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">Mandril todo em metal de 10 mm com função impacto</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Iluminação</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">LED integrado na base</td></tr>
-      <tr><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;"><strong>Garantia</strong></td><td style="padding: 10px; border-bottom: 1px solid #e2e8f0;">2 anos (1 ano + 1 ano mediante registro)</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="product-card-affiliate" style="margin: 30px 0;">
-  <div class="product-card-body">
-    <div class="product-card-img">
-      <img src="{{ '/assets/images/posts/black-decker-bcd704c1.png' | relative_url }}" alt="Black+Decker BCD704C1">
-    </div>
-    <div class="product-card-info">
-      <h3 class="product-card-title">Black+Decker BCD704C1</h3>
-      <p class="product-card-subtitle">Furadeira/Parafusadeira de Impacto 20V MAX com mandril metálico de 10 mm e 42 Nm</p>
-      <div class="product-card-buttons">
-        <a href="SEU_LINK_AMAZON" target="_blank" rel="nofollow sponsored" class="btn-store btn-amazon-green">Ver na Amazon</a>
-        <a href="SEU_LINK_MERCADO_LIVRE" target="_blank" rel="nofollow sponsored" class="btn-store btn-ml-yellow">Ver no Mercado Livre</a>
-        <a href="SEU_LINK_SHOPEE" target="_blank" rel="nofollow sponsored" class="btn-store btn-shopee-red">Ver na Shopee</a>
-      </div>
-    </div>
-  </div>
-</div>
+{% include produto-card.html %}
 
 ## <a id="construcao-e-ergonomia"></a>Proposta de Mercado, Construção e Ergonomia
 
@@ -114,7 +91,7 @@ O LED na base projeta um feixe amplo e sem sombras duras, iluminando a área de 
 
 ## <a id="desempenho-pratico"></a>Desempenho Técnico em Cenários Reais
 
-No eixo do desempenho, a BCD704C1 revela sua personalidade dual. Na primeira velocidade (0–450 RPM), o torque de 42 Nm coloca-a no topo da categoria de entrada 20V. Parafusamentos em madeira dura (ipê, peroba) com brocas chata de 25 mm avançam sem engasgar, desde que se utilize brocas afiadas e se respeite a geometria de corte. O modo impacto entra em ação na alvenaria: furos em tijolo baiano, bloco de concreto celular e argamassa até 10 mm são executados com rapidez aceitável. Em concreto estrutural armado, a ferramenta cumpre o papel de "quebra-galho" para furos esporádicos de 6–8 mm para buchas plásticas, mas o motor escovado aquece rápido e a bateria de 1.5 Ah drena em poucos furos — aqui a limitação é física, não de projeto. Você pode [verificar a disponibilidade e o preço atualizado da Black+Decker BCD704C1 na Amazon](SEU_LINK_AMAZON) para comparar com o custo de baterias adicionais.
+No eixo do desempenho, a BCD704C1 revela sua personalidade dual. Na primeira velocidade (0–450 RPM), o torque de 42 Nm coloca-a no topo da categoria de entrada 20V. Parafusamentos em madeira dura (ipê, peroba) com brocas chata de 25 mm avançam sem engasgar, desde que se utilize brocas afiadas e se respeite a geometria de corte. O modo impacto entra em ação na alvenaria: furos em tijolo baiano, bloco de concreto celular e argamassa até 10 mm são executados com rapidez aceitável. Em concreto estrutural armado, a ferramenta cumpre o papel de "quebra-galho" para furos esporádicos de 6–8 mm para buchas plásticas, mas o motor escovado aquece rápido e a bateria de 1.5 Ah drena em poucos furos — aqui a limitação é física, não de projeto. Você pode consultar a disponibilidade e o preço atualizado da Black+Decker BCD704C1 para comparar com o custo de baterias adicionais.
 
 A segunda velocidade (0–1.500 RPM) brilha na perfuração em madeira, MDF, chapa de aço fino (até 2 mm) e plásticos. O mandril metálico mantém a concentricidade mesmo sob carga lateral moderada, evitando o alargamento do furo. As 11 posições de torque mais o modo perfuração cobrem desde parafusos de drywall (posição 2–3) até parafusos estruturais 5×50 mm em madeira (posição 8–10). O click de desarme é audível e positivo, impedindo cabeça espanada ou madeira fendida.
 
@@ -189,19 +166,4 @@ Recomenda-se a compra para: proprietários que realizam manutenção residencial
 
 Em síntese: a BCD704C1 é a "furadeira de fim de semana que não te deixa na mão na segunda-feira". Uma escolha técnica sensata, respaldada por engenharia de grande volume e suporte de rede autorizada capilarizada.
 
-<div class="product-card-affiliate" style="margin: 30px 0;">
-  <div class="product-card-body">
-    <div class="product-card-img">
-      <img src="{{ '/assets/images/posts/black-decker-bcd704c1.png' | relative_url }}" alt="Black+Decker BCD704C1">
-    </div>
-    <div class="product-card-info">
-      <h3 class="product-card-title">Black+Decker BCD704C1</h3>
-      <p class="product-card-subtitle">Furadeira/Parafusadeira de Impacto 20V MAX com mandril metálico de 10 mm e 42 Nm</p>
-      <div class="product-card-buttons">
-        <a href="SEU_LINK_AMAZON" target="_blank" rel="nofollow sponsored" class="btn-store btn-amazon-green">Ver na Amazon</a>
-        <a href="SEU_LINK_MERCADO_LIVRE" target="_blank" rel="nofollow sponsored" class="btn-store btn-ml-yellow">Ver no Mercado Livre</a>
-        <a href="SEU_LINK_SHOPEE" target="_blank" rel="nofollow sponsored" class="btn-store btn-shopee-red">Ver na Shopee</a>
-      </div>
-    </div>
-  </div>
-</div>
+{% include produto-card.html %}

@@ -22,10 +22,10 @@
 
       {% assign links = p.links %}
 
-      {% if links.amazon or links.mercadolivre or links.shopee %}
+      {% if links.amazon != blank or links.mercadolivre != blank or links.shopee != blank %}
       <div class="product-card-buttons">
 
-        {% if links.amazon %}
+        {% if links.amazon != blank %}
         <a href="{{ links.amazon | escape }}"
            target="_blank"
            rel="sponsored nofollow noopener noreferrer"
@@ -34,7 +34,7 @@
         </a>
         {% endif %}
 
-        {% if links.mercadolivre %}
+        {% if links.mercadolivre != blank %}
         <a href="{{ links.mercadolivre | escape }}"
            target="_blank"
            rel="sponsored nofollow noopener noreferrer"
@@ -43,7 +43,7 @@
         </a>
         {% endif %}
 
-        {% if links.shopee %}
+        {% if links.shopee != blank %}
         <a href="{{ links.shopee | escape }}"
            target="_blank"
            rel="sponsored nofollow noopener noreferrer"

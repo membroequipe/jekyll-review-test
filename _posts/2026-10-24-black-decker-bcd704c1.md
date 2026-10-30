@@ -41,7 +41,7 @@ avaliacao:
 
 A Black+Decker BCD704C1 chega ao mercado como uma proposta consolidada dentro do ecossistema 20V MAX da marca, posicionando-se como uma furadeira e parafusadeira de entrada robusta para o usuário doméstico exigente e para o profissional que busca uma ferramenta leve para aplicações leves e médias. Este modelo entrega a versatilidade de dois modos de operação — perfuração e parafusamento — com a adição da função impacto, o que amplia consideravelmente seu leque de aplicações em alvenaria leve. O veredito rápido aponta para um equipamento equilibrado: torque suficiente para a grande maioria das tarefas residenciais, ergonomia bem resolvida e a confiabilidade da plataforma de baterias intercambiáveis.
 
-{% include review-resumo.html %}
+{% include resumo-avaliacao.html %}
 
 {% include ficha-tecnica.html %}
 

@@ -40,3 +40,55 @@ black_decker_bcd704c1:
       valor: "LED integrado na base"
     - nome: "Garantia"
       valor: "2 anos (1 ano + 1 ano mediante registro)"
+
+makita_dhp482:
+  nome: Makita DHP482
+  descricao: Furadeira/parafusadeira de impacto 18V com 130 Nm, brushless e XPT
+  imagem: /assets/images/posts/makita-dhp482.webp
+  links:
+    amazon: ''
+    mercadolivre: ''
+    shopee: ''
+  especificacoes:
+  - nome: Categoria
+    valor: Reviews
+  - nome: Modelo
+    valor: Makita DHP482 (corpo) / Kit DHP482RTJ / DHP482Z
+  - nome: Categoria do Produto
+    valor: Furadeira e Parafusadeira de Impacto a Bateria 18V LXT
+  - nome: Motor
+    valor: BL (Brushless / Sem Escovas)
+  - nome: Voltagem / Alimentação
+    valor: 18V (Linha LXT)
+  - nome: Mandril
+    valor: Aperto rápido 13 mm (1/2") - todo em metal
+  - nome: Torque / Potência
+    valor: 130 Nm (máximo) / 65 Nm (contínuo)
+  - nome: Configurações de Torque
+    valor: 21 estágios + modo furação + modo impacto
+  - nome: Rotação / RPM
+    valor: 0 – 550 rpm (V1) / 0 – 2.100 rpm (V2)
+  - nome: Impactos por Minuto (IPM)
+    valor: 0 – 7.700 ipm (V1) / 0 – 29.400 ipm (V2)
+  - nome: Capacidade de Perfuração
+    valor: 'Aço: 13 mm / Madeira: 76 mm / Alvenaria: 16 mm'
+  - nome: Tecnologia XPT
+    valor: Sim (Proteção extrema contra poeira e respingos)
+  - nome: Iluminação
+    valor: LED duplo com função afterglow (remanescente)
+  - nome: Freio Eletrônico
+    valor: Sim
+  - nome: Reversível
+    valor: Sim
+  - nome: Gatilho
+    valor: Velocidade variável eletrônica
+  - nome: Empunhadura
+    valor: Soft grip ergonômico
+  - nome: Compatibilidade Baterias
+    valor: Todas 18V LXT (BL1830B, BL1850B, BL1860B, etc.)
+  - nome: Peso Líquido
+    valor: ~1,7 kg (sem bateria) / ~2,3 kg (com BL1850B)
+  - nome: Dimensões (C x L x A)
+    valor: 182 x 79 x 245 mm
+  - nome: Destaque Principal
+    valor: Motor brushless de 130 Nm com proteção XPT nativa

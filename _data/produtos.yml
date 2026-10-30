@@ -92,3 +92,28 @@ makita_dhp482:
     valor: 182 x 79 x 245 mm
   - nome: Destaque Principal
     valor: Motor brushless de 130 Nm com proteção XPT nativa
+    
+produto_exemplo:
+  nome: "Nome e modelo do produto"
+  descricao: "Descrição curta do produto"
+  imagem: "/assets/images/posts/produto-exemplo.webp"
+
+  links:
+    amazon: ""
+    mercadolivre: ""
+    shopee: ""
+
+  especificacoes:
+    - nome: "Marca"
+      valor: "Nome da marca"
+    - nome: "Modelo"
+      valor: "Modelo do produto"
+    - nome: "Alimentação"
+      valor: "Informação técnica"
+    - nome: "Potência / Torque"
+      valor: "Informação técnica"
+    - nome: "Peso"
+      valor: "Informação técnica"
+    - nome: "Garantia"
+      valor: "Informação técnica"
+

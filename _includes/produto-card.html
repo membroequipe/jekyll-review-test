@@ -1,15 +1,66 @@
+
 {% assign p = page.produto %}
+
 {% if p %}
-<div class="product-card-affiliate"><div class="product-card-body">
-  <div class="product-card-img"><img src="{{ p.imagem | relative_url }}" alt="{{ p.nome | escape }}" loading="lazy"></div>
-  <div class="product-card-info"><h3 class="product-card-title">{{ p.nome | escape }}</h3><p class="product-card-subtitle">{{ p.descricao | escape }}</p>
-  {% assign links = p.links %}
-  {% if links.amazon or links.mercadolivre or links.shopee %}
-  <div class="product-card-buttons">
-  {% if links.amazon %}<a href="{{ links.amazon | escape }}" target="_blank" rel="sponsored nofollow noopener noreferrer" class="btn-store btn-amazon-green">Ver na Amazon</a>{% endif %}
-  {% if links.mercadolivre %}<a href="{{ links.mercadolivre | escape }}" target="_blank" rel="sponsored nofollow noopener noreferrer" class="btn-store btn-ml-yellow">Ver no Mercado Livre</a>{% endif %}
-  {% if links.shopee %}<a href="{{ links.shopee | escape }}" target="_blank" rel="sponsored nofollow noopener noreferrer" class="btn-store btn-shopee-red">Ver na Shopee</a>{% endif %}
-  </div>{% endif %}
+<div class="product-card-affiliate">
+  <div class="product-card-body">
+
+    {% if p.imagem %}
+    <div class="product-card-img">
+      <img
+        src="{{ p.imagem | relative_url }}"
+        alt="{{ p.nome | escape }}"
+        loading="lazy">
+    </div>
+    {% endif %}
+
+    <div class="product-card-info">
+      <h3 class="product-card-title">
+        {{ p.nome | escape }}
+      </h3>
+
+      {% if p.descricao %}
+      <p class="product-card-subtitle">
+        {{ p.descricao | escape }}
+      </p>
+      {% endif %}
+
+      {% assign links = p.links %}
+
+      {% if links.amazon != blank or links.mercadolivre != blank or links.shopee != blank %}
+      <div class="product-card-buttons">
+
+        {% if links.amazon != blank %}
+        <a href="{{ links.amazon | escape }}"
+           target="_blank"
+           rel="sponsored nofollow noopener noreferrer"
+           class="btn-store btn-amazon-green">
+          Ver na Amazon
+        </a>
+        {% endif %}
+
+        {% if links.mercadolivre != blank %}
+        <a href="{{ links.mercadolivre | escape }}"
+           target="_blank"
+           rel="sponsored nofollow noopener noreferrer"
+           class="btn-store btn-ml-yellow">
+          Ver no Mercado Livre
+        </a>
+        {% endif %}
+
+        {% if links.shopee != blank %}
+        <a href="{{ links.shopee | escape }}"
+           target="_blank"
+           rel="sponsored nofollow noopener noreferrer"
+           class="btn-store btn-shopee-red">
+          Ver na Shopee
+        </a>
+        {% endif %}
+
+      </div>
+      {% endif %}
+
+    </div>
   </div>
-</div></div>
+</div>
 {% endif %}

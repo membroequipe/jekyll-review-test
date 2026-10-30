@@ -4,13 +4,17 @@ title: 'Review Black+Decker BCD704C1: Vale a Pena em 2026? Análise Completa!'
 description: 'Análise completa da Black+Decker BCD704C1: torque de 42 Nm, mandril metálico e função impacto. Descubra
   se essa furadeira 20V MAX vale a pena em 2026.'
 slug: review-black-decker-bcd704c1
+
 categories:
 - furadeiras
 - reviews
+
 produto_id: black_decker_bcd704c1
+
 image: /assets/images/posts/black-decker-bcd704c1.webp
 date: '2026-10-24'
 author: Equipe de Análises
+
 avaliacao:
   nota: 8.5
   resumo: O Black+Decker BCD704C1 destaca-se por oferecer torque de 42 Nm, mandril todo em metal e função impacto
@@ -27,45 +31,6 @@ avaliacao:
   - Ausência de freio eletrônico obriga a esperar o mandril parar
   - Ruído e vibração no modo impacto após uso prolongado
   - Carregador sem indicador de porcentagem de carga
-ficha_tecnica:
-- campo: Categoria
-  valor: Reviews
-- campo: Modelo
-  valor: BCD704C1
-- campo: Voltagem / Alimentação
-  valor: 20V MAX (18V Nominal) — Bateria 1.5 Ah (LB1R5)
-- campo: Tipo
-  valor: Furadeira/Parafusadeira de Impacto a Bateria
-- campo: Mandril
-  valor: Aperto rápido 10 mm (3/8") — todo em metal
-- campo: Torque / Potência
-  valor: 42 Nm (máximo)
-- campo: Rotação / RPM
-  valor: '2 velocidades: 0–450 / 0–1.500 RPM'
-- campo: Função Impacto
-  valor: Sim (até 22.500 IPM)
-- campo: Configurações de Torque
-  valor: 11 posições + perfuração + impacto
-- campo: Motor
-  valor: Escovas (Brushed)
-- campo: Carregador
-  valor: Bivolt automático (LC1120)
-- campo: Peso Líquido
-  valor: Aprox. 1,4 kg (com bateria)
-- campo: Destaque Principal
-  valor: Mandril todo em metal de 10 mm com função impacto
-- campo: Iluminação
-  valor: LED integrado na base
-- campo: Garantia
-  valor: 2 anos (1 ano + 1 ano mediante registro)
-produto:
-  nome: Black+Decker BCD704C1
-  descricao: Furadeira/parafusadeira de impacto 20V MAX com mandril metálico de 10 mm e 42 Nm
-  imagem: /assets/images/posts/black-decker-bcd704c1.webp
-  links:
-    amazon: ""
-    mercadolivre: ""
-    shopee: ""
 ---
 
 

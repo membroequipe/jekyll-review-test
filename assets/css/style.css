@@ -2547,3 +2547,48 @@ table.specs-table tbody th:first-child {
     justify-content: center;
   }
 }
+
+
+/* Card de produto — layout horizontal no desktop */
+
+@media (min-width: 768px) {
+  .product-card-affiliate {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px 0 !important;
+    box-sizing: border-box;
+  }
+
+  .product-card-affiliate .product-card-body {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+    padding: 24px !important;
+  }
+
+  .product-card-affiliate .product-card-img {
+    flex: 0 0 180px !important;
+    width: 180px !important;
+    max-width: 180px !important;
+  }
+
+  .product-card-affiliate .product-card-img img {
+    width: 100% !important;
+    height: 170px !important;
+    object-fit: contain;
+  }
+
+  .product-card-affiliate .product-card-info {
+    flex: 1 1 auto !important;
+    min-width: 0;
+    text-align: left !important;
+  }
+
+  .product-card-affiliate .product-card-buttons {
+    justify-content: flex-start !important;
+  }
+}
+

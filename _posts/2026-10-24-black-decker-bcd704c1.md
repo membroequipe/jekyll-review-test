@@ -62,9 +62,9 @@ produto:
   descricao: Furadeira/parafusadeira de impacto 20V MAX com mandril metálico de 10 mm e 42 Nm
   imagem: /assets/images/posts/black-decker-bcd704c1.webp
   links:
-    amazon: null
-    mercadolivre: null
-    shopee: null
+    amazon: ""
+    mercadolivre: ""
+    shopee: ""
 ---
 
 

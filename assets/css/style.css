@@ -2464,3 +2464,86 @@ table.specs-table tbody th:first-child {
     overflow-wrap: anywhere;
   }
 }
+
+
+/* Card de produto dos reviews */
+
+.product-card-affiliate {
+  width: 100%;
+  max-width: 100%;
+  margin: 24px auto;
+  box-sizing: border-box;
+}
+
+.product-card-affiliate .product-card-body {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  text-align: left;
+}
+
+.product-card-affiliate .product-card-img {
+  flex: 0 0 170px;
+  width: 170px;
+  max-width: 170px;
+}
+
+.product-card-affiliate .product-card-img img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.product-card-affiliate .product-card-info {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.product-card-affiliate .product-card-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.product-card-affiliate .product-card-subtitle {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.product-card-affiliate .product-card-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .product-card-affiliate .product-card-body {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .product-card-affiliate .product-card-img {
+    flex: none;
+    width: 180px;
+    max-width: 100%;
+  }
+
+  .product-card-affiliate .product-card-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-card-affiliate .product-card-title {
+    font-size: 18px;
+  }
+
+  .product-card-affiliate .product-card-buttons {
+    justify-content: center;
+  }
+}

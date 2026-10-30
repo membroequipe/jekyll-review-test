@@ -782,46 +782,41 @@ details.toc-box[open] > summary::after {
     color: #b91c1c;
 }
 
+
 /* =========================================
    9. CARDS DE AFILIADOS E BOTÕES DE LOJAS
    ========================================= */
 
 .product-card-affiliate {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    max-width: 580px;
+    max-width: 100%;
     min-width: 0;
-    margin: 28px auto;
+    margin: 28px 0;
     padding: 24px;
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-top: 3px solid var(--accent);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    text-align: center;
 }
 
 .product-card-body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 24px;
     width: 100%;
     min-width: 0;
-    text-align: center;
 }
 
 .product-card-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    width: 140px;
-    height: 140px;
-    max-width: 100%;
-    margin: 0 auto 4px;
+    flex: 0 0 170px;
+    width: 170px;
+    height: 170px;
+    margin: 0;
     padding: 10px;
     overflow: hidden;
     background: #ffffff;
@@ -839,13 +834,12 @@ details.toc-box[open] > summary::after {
 
 .product-card-info {
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 8px;
-    width: 100%;
     min-width: 0;
-    margin-bottom: 4px;
-    text-align: center;
+    text-align: left;
 }
 
 .product-card-affiliate .product-card-title {
@@ -881,7 +875,7 @@ details.toc-box[open] > summary::after {
     gap: 10px;
     width: 100%;
     min-width: 0;
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .product-card-buttons > :only-child {
@@ -892,7 +886,6 @@ details.toc-box[open] > summary::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
     width: 100%;
     min-width: 0;
     min-height: 48px;
@@ -907,14 +900,11 @@ details.toc-box[open] > summary::after {
     text-align: center;
     text-decoration: none;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: normal;
     box-shadow: var(--shadow-sm);
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Também cobre botões dentro de .post-content. */
 .btn-store.btn-amazon-green,
 .product-card-buttons .btn-amazon-green {
     background: #047857;
@@ -936,6 +926,41 @@ details.toc-box[open] > summary::after {
 .btn-store :where(strong, span) {
     color: inherit;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .product-card-affiliate {
+        padding: 20px;
+    }
+
+    .product-card-body {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .product-card-img {
+        flex: 0 0 auto;
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+
+    .product-card-info {
+        flex: 1 1 auto;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-card-buttons {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .btn-store {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* =========================================
    10. GRADES E CARDS DE PUBLICAÇÕES
@@ -1827,103 +1852,17 @@ details.toc-box[open] > summary::after {
 
 
 /* -----------------------------------------
-   CARDS DE AFILIADOS
-
-   Corrige o margin: 30px 0 inline
-   que impede a centralização.
+   CARDS DE AFILIADOS — COMPATIBILIDADE
    ----------------------------------------- */
 
 .post-content .product-card-affiliate {
     width: 100% !important;
-    max-width: 580px !important;
-    min-width: 0;
-
-    margin: 28px auto !important;
-    padding: 24px !important;
-
-    background: #ffffff;
-    border: 1px solid var(--border-color);
-    border-top: 3px solid var(--accent);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-
-    text-align: center;
+    max-width: 100% !important;
+    margin: 28px 0 !important;
 }
 
-.post-content .product-card-body,
-.post-content .product-card-info {
-    width: 100%;
-    min-width: 0;
-    align-items: center;
-    text-align: center;
-}
-
-.post-content .product-card-title {
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-
-    color: var(--primary);
-    font-size: 1.15rem;
-    line-height: 1.45;
-}
-
-.post-content .product-card-affiliate p {
-    max-width: 100%;
-    margin: 0 !important;
-    color: #475569;
-    font-size: 0.9rem;
-    line-height: 1.7;
-}
-
-
-/* -----------------------------------------
-   BOTÕES DAS LOJAS
-
-   Distribui igualmente uma, duas ou três lojas.
-   Funciona também dentro de product-card-info.
-   ----------------------------------------- */
-
-.post-content .product-card-buttons {
-    display: grid !important;
-
-    grid-template-columns: none;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(0, 1fr);
-
-    align-items: stretch;
-    gap: 10px;
-
-    width: 100% !important;
-    min-width: 0;
-    margin-top: 16px;
-}
-
-/* Neutraliza a regra anterior para botão único. */
-.post-content .product-card-buttons > :only-child {
-    grid-column: auto;
-}
-
-.post-content .product-card-buttons .btn-store {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    min-height: 48px;
-
-    padding: 12px 10px !important;
-
-    font-size: 0.85rem !important;
-    line-height: 1.45;
-    text-align: center;
-    text-decoration: none;
-
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-}
+/* Preserva a identidade visual dos botões
+   em artigos antigos com estilos inline. */
 
 .post-content .product-card-buttons .btn-amazon-green {
     background: #047857 !important;
@@ -1939,6 +1878,7 @@ details.toc-box[open] > summary::after {
     background: #c2410c !important;
     color: #ffffff !important;
 }
+
 
 
 /* -----------------------------------------
@@ -2130,21 +2070,7 @@ details.toc-box[open] > summary::after {
    ----------------------------------------- */
 
 @media (max-width: 768px) {
-    .post-content .product-card-affiliate {
-        padding: 20px !important;
-    }
-
-    .post-content .product-card-buttons {
-        grid-auto-flow: row;
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .post-content .product-card-buttons .btn-store {
-        font-size: 0.9rem !important;
-        min-height: 48px;
-    }
-
-    .post-content :is(.toc-box, .toc-container) {
+       .post-content :is(.toc-box, .toc-container) {
         padding: 18px !important;
     }
 

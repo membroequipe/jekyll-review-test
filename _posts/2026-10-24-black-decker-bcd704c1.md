@@ -7,7 +7,7 @@ slug: review-black-decker-bcd704c1
 categories:
 - furadeiras
 - reviews
-- produto_id: black_decker_bcd704c1
+produto_id: black_decker_bcd704c1
 image: /assets/images/posts/black-decker-bcd704c1.webp
 date: '2026-10-24'
 author: Equipe de Análises

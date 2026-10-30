@@ -46,9 +46,9 @@ makita_dhp482:
   descricao: Furadeira/parafusadeira de impacto 18V com 130 Nm, brushless e XPT
   imagem: /assets/images/posts/makita-dhp482.webp
   links:
-    amazon: ''
-    mercadolivre: ''
-    shopee: ''
+    amazon: ""
+    mercadolivre: ""
+    shopee: ""
   especificacoes:
   - nome: Categoria
     valor: Reviews

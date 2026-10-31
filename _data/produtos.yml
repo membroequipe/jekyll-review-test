@@ -137,9 +137,9 @@ furadeira_teste_03:
   descricao: "Produto fictício para validar o funcionamento de comparativos com três produtos."
   imagem: "/assets/images/posts/black-decker-bcd704c1.webp"
   links:
-    amazon: ""
-    mercadolivre: "https://www.mercadolivre.com.br/parafusadeira-e-furadeira-de-impacto-13mm-20v-dewalt-dcd7781d2-com-2-baterias-carregador-e-maleta/p/MLB29687252"
-    shopee: "https://www.mercadolivre.com.br/parafusadeira-e-furadeira-de-impacto-13mm-20v-dewalt-dcd7781d2-com-2-baterias-carregador-e-maleta/p/MLB29687252"
+    amazon: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
+    mercadolivre: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
+    shopee: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
   especificacoes:
     - nome: "Tipo"
       valor: "Produto de teste"

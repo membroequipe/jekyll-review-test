@@ -1,10 +1,11 @@
-
 ---
 layout: post
 title: "Teste de Comparativo: Black+Decker vs Makita"
-description: "Página de teste para verificar a exibição de múltiplos cards de produtos em um artigo comparativo Jekyll."
+description: "Página de teste para verificar múltiplos cards de produtos."
 slug: teste-comparativo-black-decker-vs-makita
-categories: [comparativos]
+category: comparativos
+categories:
+  - comparativos
 image: "/assets/images/posts/black-decker-bcd704c1.webp"
 date: 2026-10-31
 author: "Equipe de Análises"

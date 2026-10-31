@@ -130,6 +130,23 @@ produto_exemplo:
   descricao: "Descrição curta do produto"
   imagem: "/assets/images/posts/produto-exemplo.webp"
 
+
+  
+furadeira_teste_03:
+  nome: "Furadeira Teste 03"
+  descricao: "Produto fictício para validar o funcionamento de comparativos com três produtos."
+  imagem: "/assets/images/posts/black-decker-bcd704c1.webp"
+  links:
+    amazon: ""
+    mercadolivre: ""
+    shopee: ""
+  especificacoes:
+    - nome: "Tipo"
+      valor: "Produto de teste"
+    - nome: "Finalidade"
+      valor: "Validação técnica do site"
+
+
   links:
     amazon: ""
     mercadolivre: ""

@@ -92,6 +92,38 @@ makita_dhp482:
     valor: 182 x 79 x 245 mm
   - nome: Destaque Principal
     valor: Motor brushless de 130 Nm com proteção XPT nativa
+
+stanley_sbd716d2t:
+  nome: "Stanley SBD716D2T"
+  descricao: "Furadeira e Parafusadeira 18V de 1/2 polegada com duas baterias inclusas e excelente custo-benefício."
+  imagem: "/assets/images/posts/stanley-sbd716d2t.webp"
+  links:
+    amazon: ""
+    mercadolivre: ""
+    shopee: ""
+  especificacoes:
+    - nome: "Tipo de Produto"
+      valor: "Furadeira/Parafusadeira sem fio"
+    - nome: "Série"
+      valor: "Stanley SBD716D2T"
+    - nome: "Tensão"
+      valor: "18 V (2.000 mAh)"
+    - nome: "Torque Máximo"
+      valor: "210 ft·lb"
+    - nome: "Mandril"
+      valor: "Keyless de 1/2\" (13 mm)"
+    - nome: "Velocidade"
+      valor: "Até 1.500 RPM (2 velocidades)"
+    - nome: "Função de Impacto"
+      valor: "Não possui"
+    - nome: "Controle de Torque"
+      valor: "22 configurações"
+    - nome: "Peso"
+      valor: "4,4 lbs"
+    - nome: "Bateria"
+      valor: "2 módulos de 18V inclusos"
+    - nome: "Garantia"
+      valor: "3 anos limitada"
     
 produto_exemplo:
   nome: "Nome e modelo do produto"

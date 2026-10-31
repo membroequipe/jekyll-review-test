@@ -125,13 +125,7 @@ stanley_sbd716d2t:
     - nome: "Garantia"
       valor: "3 anos limitada"
     
-produto_exemplo:
-  nome: "Nome e modelo do produto"
-  descricao: "Descrição curta do produto"
-  imagem: "/assets/images/posts/produto-exemplo.webp"
-
-
-  
+ 
 furadeira_teste_03:
   nome: "Furadeira Teste 03"
   descricao: "Produto fictício para validar o funcionamento de comparativos com três produtos."
@@ -146,6 +140,10 @@ furadeira_teste_03:
     - nome: "Finalidade"
       valor: "Validação técnica do site"
 
+produto_exemplo:
+  nome: "Nome e modelo do produto"
+  descricao: "Descrição curta do produto"
+  imagem: "/assets/images/posts/produto-exemplo.webp"
 
   links:
     amazon: ""

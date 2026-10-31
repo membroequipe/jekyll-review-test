@@ -131,7 +131,7 @@ furadeira_teste_03:
   descricao: "Produto fictício para validar o funcionamento de comparativos com três produtos."
   imagem: "/assets/images/posts/black-decker-bcd704c1.webp"
   links:
-    amazon: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
+    amazon: ""
     mercadolivre: ""
     shopee: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
   especificacoes:

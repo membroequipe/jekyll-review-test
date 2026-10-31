@@ -24,8 +24,6 @@ avaliacao:
 
 {% include review-toc.html %}
 
-*Transparência: quando houver links de afiliados, poderemos receber uma comissão por compras qualificadas, sem custo adicional para você.*
-
 ## Introdução e Veredito Rápido
 
 A escolha de uma ferramenta elétrica para o dia a dia de trabalho ou para projetos de bricolage exige um equilíbrio cuidadoso entre potência, ergonomia e investimento financeiro. Nesse cenário, a **Stanley SBD716D2T** ocupa uma posição de destaque no mercado de ferramentas combinadas de média categoria, equilibrando de forma inteligente um preço altamente acessível com muitos dos recursos e refinamentos tipicamente encontrados em modelos de maior capacidade e custo superior. 

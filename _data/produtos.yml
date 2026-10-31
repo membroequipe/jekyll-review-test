@@ -132,7 +132,7 @@ furadeira_teste_03:
   imagem: "/assets/images/posts/black-decker-bcd704c1.webp"
   links:
     amazon: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
-    mercadolivre: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
+    mercadolivre: ""
     shopee: "https://www.amazon.com.br/STANLEY-SCD121S1-Parafusadeira-Furadeira-Bateria/dp/B082N3QNDN"
   especificacoes:
     - nome: "Tipo"

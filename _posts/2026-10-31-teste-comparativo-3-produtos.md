@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Teste de Comparativo com 3 Produtos"

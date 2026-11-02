@@ -2,7 +2,7 @@
    1. VARIÁVEIS E CONFIGURAÇÕES GLOBAIS
 
    A fonte Plus Jakarta Sans é carregada
-   no arquivo _layouts/default.html.
+   no arquivo _layouts/default.html. 
    ========================================= */
 
 :root {
@@ -782,41 +782,46 @@ details.toc-box[open] > summary::after {
     color: #b91c1c;
 }
 
-
 /* =========================================
    9. CARDS DE AFILIADOS E BOTÕES DE LOJAS
    ========================================= */
 
 .product-card-affiliate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 100%;
+    max-width: 580px;
     min-width: 0;
-    margin: 28px 0;
+    margin: 28px auto;
     padding: 24px;
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-top: 3px solid var(--accent);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+    text-align: center;
 }
 
 .product-card-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
     width: 100%;
     min-width: 0;
+    text-align: center;
 }
 
 .product-card-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 170px;
-    width: 170px;
-    height: 170px;
-    margin: 0;
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    max-width: 100%;
+    margin: 0 auto 4px;
     padding: 10px;
     overflow: hidden;
     background: #ffffff;
@@ -834,12 +839,13 @@ details.toc-box[open] > summary::after {
 
 .product-card-info {
     display: flex;
-    flex: 1 1 0;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 8px;
+    width: 100%;
     min-width: 0;
-    text-align: left;
+    margin-bottom: 4px;
+    text-align: center;
 }
 
 .product-card-affiliate .product-card-title {
@@ -875,7 +881,7 @@ details.toc-box[open] > summary::after {
     gap: 10px;
     width: 100%;
     min-width: 0;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 .product-card-buttons > :only-child {
@@ -886,6 +892,7 @@ details.toc-box[open] > summary::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     width: 100%;
     min-width: 0;
     min-height: 48px;
@@ -900,86 +907,35 @@ details.toc-box[open] > summary::after {
     text-align: center;
     text-decoration: none;
     white-space: normal;
-    overflow-wrap: normal;
+    overflow-wrap: anywhere;
     box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
+/* Também cobre botões dentro de .post-content. */
 .btn-store.btn-amazon-green,
 .product-card-buttons .btn-amazon-green {
-    background: #047857;
+    background: #1ea64b;
     color: #ffffff;
 }
 
 .btn-store.btn-ml-yellow,
 .product-card-buttons .btn-ml-yellow {
-    background: #facc15;
+    background: #ffe600;
     color: #0f172a;
 }
 
 .btn-store.btn-shopee-red,
 .product-card-buttons .btn-shopee-red {
-    background: #c2410c;
+    background: #ee4d2d;
     color: #ffffff;
 }
 
 .btn-store :where(strong, span) {
     color: inherit;
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-    .product-card-affiliate {
-        padding: 20px;
-    }
-
-    .product-card-body {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .product-card-img {
-        flex: 0 0 auto;
-        width: 140px;
-        height: 140px;
-        margin: 0 auto;
-    }
-
-    .product-card-info {
-        flex: 1 1 auto;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .product-card-buttons {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .btn-store {
-        font-size: 0.9rem;
-    }
-}
-
-
-@media (min-width: 769px) {
-    .post-content .product-card-buttons {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-auto-flow: row;
-        gap: 10px;
-    }
-
-    .post-content .product-card-buttons > .btn-store {
-        grid-column: auto;
-        min-width: 0;
-    }
-
-    .post-content .product-card-buttons > :only-child {
-        grid-column: 1 / -1;
-    }
-}
-
 
 /* =========================================
    10. GRADES E CARDS DE PUBLICAÇÕES
@@ -1078,6 +1034,7 @@ details.toc-box[open] > summary::after {
     font-weight: 800;
     line-height: 1.5;
     overflow-wrap: anywhere;
+   text-transform: uppercase;
 }
 
 .home-post-title {
@@ -1139,14 +1096,11 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-hero-main {
-    background: transparent; /* Sem fundo */
-    color: #3b2a00; /* Cor do texto escura */
-    border: 2px solid #3b2a00; /* Contorno escuro */
-    font-weight: 700;
-    padding: 10px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 36px;
+    padding: clamp(24px, 4vw, 48px);
 }
 
 .pc-hero-main > * {
@@ -1217,22 +1171,12 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-action-primary {
-   background: #8b6914; /* Dourado bronze profundo */
-    color: #ffffff; /* Texto branco */
-    font-weight: 700;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    /* Sombra que simula o botão flutuando sobre o ouro */
-    box-shadow: 0 10px 20px rgba(139, 105, 20, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
+    background: var(--accent);
+    color: var(--primary);
 }
 
 .pc-action-primary:hover {
-    background: linear-gradient(to bottom, #f59e0b, #d97706); /* Laranja com profundidade */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    transition: transform 0.2s ease;
-    transform: translateY(-2px); /* Efeito flutuante ao passar o mouse */
+    background: #fbbf24;
 }
 
 .pc-action-secondary {
@@ -1248,7 +1192,7 @@ details.toc-box[open] > summary::after {
 
 .pc-feature {
     padding: 26px;
-    background: #0f172a;
+    background: var(--primary);
     color: #e2e8f0;
     border-radius: 18px;
 }
@@ -1884,33 +1828,118 @@ details.toc-box[open] > summary::after {
 
 
 /* -----------------------------------------
-   CARDS DE AFILIADOS — COMPATIBILIDADE
+   CARDS DE AFILIADOS
+
+   Corrige o margin: 30px 0 inline
+   que impede a centralização.
    ----------------------------------------- */
 
 .post-content .product-card-affiliate {
     width: 100% !important;
-    max-width: 100% !important;
-    margin: 28px 0 !important;
+    max-width: 580px !important;
+    min-width: 0;
+
+    margin: 28px auto !important;
+    padding: 24px !important;
+
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--accent);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+
+    text-align: center;
 }
 
-/* Preserva a identidade visual dos botões
-   em artigos antigos com estilos inline. */
+.post-content .product-card-body,
+.post-content .product-card-info {
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.post-content .product-card-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    color: var(--primary);
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.post-content .product-card-affiliate p {
+    max-width: 100%;
+    margin: 0 !important;
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* -----------------------------------------
+   BOTÕES DAS LOJAS
+
+   Distribui igualmente uma, duas ou três lojas.
+   Funciona também dentro de product-card-info.
+   ----------------------------------------- */
+
+.post-content .product-card-buttons {
+    display: grid !important;
+
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+
+    align-items: stretch;
+    gap: 10px;
+
+    width: 100% !important;
+    min-width: 0;
+    margin-top: 16px;
+}
+
+/* Neutraliza a regra anterior para botão único. */
+.post-content .product-card-buttons > :only-child {
+    grid-column: auto;
+}
+
+.post-content .product-card-buttons .btn-store {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 48px;
+
+    padding: 12px 10px !important;
+
+    font-size: 0.85rem !important;
+    line-height: 1.45;
+    text-align: center;
+    text-decoration: none;
+
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+}
 
 .post-content .product-card-buttons .btn-amazon-green {
-    background: #047857 !important;
+    background: #1ea64b !important;
     color: #ffffff !important;
 }
 
 .post-content .product-card-buttons .btn-ml-yellow {
-    background: #facc15 !important;
+    background: #ffe600 !important;
     color: #0f172a !important;
 }
 
 .post-content .product-card-buttons .btn-shopee-red {
-    background: #c2410c !important;
+    background: #ee4d2d !important;
     color: #ffffff !important;
 }
-
 
 
 /* -----------------------------------------
@@ -2037,12 +2066,9 @@ details.toc-box[open] > summary::after {
 }
 
 
-/* -----------------------------------------
+/* --------------------------------------
    FAQ E BLOCOS RETRÁTEIS ANTIGOS
-
-   Estiliza details fora das caixas de sumário,
-   mesmo quando não possuem a classe faq-item.
-   ----------------------------------------- */
+   -------------------------------------- */
 
 .post-content details:not(:where(
     .toc-box,
@@ -2102,7 +2128,21 @@ details.toc-box[open] > summary::after {
    ----------------------------------------- */
 
 @media (max-width: 768px) {
-       .post-content :is(.toc-box, .toc-container) {
+    .post-content .product-card-affiliate {
+        padding: 20px !important;
+    }
+
+    .post-content .product-card-buttons {
+        grid-auto-flow: row;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .post-content .product-card-buttons .btn-store {
+        font-size: 0.9rem !important;
+        min-height: 48px;
+    }
+
+    .post-content :is(.toc-box, .toc-container) {
         padding: 18px !important;
     }
 
@@ -2377,104 +2417,6 @@ details.toc-box[open] > summary::after {
 }
 
 
-
-
-/* =========================================
-   TABLET
-   ========================================= */
-
-@media (max-width: 960px) {
-    .site-footer .site-footer-container {
-        gap: 10px;
-        padding: 18px 20px;
-    }
-
-    .site-footer .footer-col-about {
-        gap: 6px 14px;
-    }
-
-    .site-footer .footer-nav {
-        gap: 4px 14px;
-    }
-}
-
-/* =========================================
-   MOBILE
-   ========================================= */
-
-@media (max-width: 600px) {
-    .site-footer {
-        margin-top: 18px;
-    }
-
-    .site-footer .site-footer-container {
-        gap: 8px;
-        padding: 16px;
-    }
-
-    .site-footer .footer-col-about {
-        gap: 6px 12px;
-    }
-
-    .site-footer .footer-brand-mark {
-        flex-basis: 28px;
-        width: 28px;
-        height: 28px;
-    }
-
-    .site-footer .footer-title {
-        font-size: 0.92rem;
-    }
-
-    .site-footer .footer-text {
-        font-size: 0.75rem;
-        line-height: 1.4;
-    }
-
-    .site-footer .footer-methodology-link {
-        font-size: 0.75rem;
-    }
-
-    .site-footer .footer-col-links {
-        gap: 0 12px;
-    }
-
-    .site-footer .footer-nav {
-        gap: 2px 14px;
-    }
-
-    .site-footer .footer-nav a {
-        min-height: 32px;
-        font-size: 0.76rem;
-        padding: 4px 0;
-    }
-
-    .site-footer .footer-bottom-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-        padding: 10px 16px;
-        text-align: center;
-    }
-
-    .site-footer .footer-disclosure,
-    .site-footer .footer-copyright {
-        flex: none;
-        width: 100%;
-        text-align: center;
-        font-size: 0.7rem;
-        line-height: 1.45;
-    }
-}
-
-/* Redução de movimento */
-@media (prefers-reduced-motion: reduce) {
-    .site-footer a {
-        transition: none;
-    }
-}
-
-
 /* Ajuste da ficha técnica dos reviews */
 
 table.specs-table th {
@@ -2513,3 +2455,33 @@ table.specs-table tbody th:first-child {
   }
 }
 
+
+/* =========================================
+   CORREÇÃO: TABELAS COMPARATIVAS LARGAS
+   Preserva as fichas técnicas de 2 colunas
+   ========================================= */
+
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) {
+    width: max-content !important;
+    min-width: 100%;
+    table-layout: auto;
+}
+
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) th,
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) td {
+    width: auto;
+    min-width: 105px;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+}
+
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) th:first-child,
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) td:first-child {
+    min-width: 180px;
+}
+
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) th:last-child,
+.post-content .specs-table-wrapper > table.specs-table:not(.table-two-columns) td:last-child {
+    min-width: 220px;
+}

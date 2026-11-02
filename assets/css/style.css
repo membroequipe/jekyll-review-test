@@ -1223,7 +1223,10 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-action-primary:hover {
-    background: #fbbf24;
+    background: linear-gradient(to bottom, #f59e0b, #d97706); /* Laranja com profundidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.2s ease;
+    transform: translateY(-2px); /* Efeito flutuante ao passar o mouse */
 }
 
 .pc-action-secondary {

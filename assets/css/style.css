@@ -1218,15 +1218,14 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-action-primary {
-     background: rgba(255, 255, 255, 0.15); /* Branco bem transparente */
-    backdrop-filter: blur(8px); /* Efeito de vidro embaçado */
-    -webkit-backdrop-filter: blur(8px); /* Suporte para Safari */
-    color: #4a3300; /* Marrom bem escuro/dourado para leitura */
-    border: 1px solid rgba(255, 255, 255, 0.4); /* Borda fina de vidro */
+   background: #8b6914; /* Dourado bronze profundo */
+    color: #ffffff; /* Texto branco */
     font-weight: 700;
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
+    /* Sombra que simula o botão flutuando sobre o ouro */
+    box-shadow: 0 10px 20px rgba(139, 105, 20, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
     transition: all 0.3s ease;
 }
 

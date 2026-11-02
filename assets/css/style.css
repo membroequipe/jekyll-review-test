@@ -1218,10 +1218,16 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-action-primary {
-    background: #ffffff;
-    color: #aa771c; /* O texto do botão fica no tom do ouro escuro */
-    font-weight: 800;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+     background: rgba(255, 255, 255, 0.15); /* Branco bem transparente */
+    backdrop-filter: blur(8px); /* Efeito de vidro embaçado */
+    -webkit-backdrop-filter: blur(8px); /* Suporte para Safari */
+    color: #4a3300; /* Marrom bem escuro/dourado para leitura */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Borda fina de vidro */
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .pc-action-primary:hover {

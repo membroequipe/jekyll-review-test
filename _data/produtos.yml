@@ -125,6 +125,32 @@ stanley_sbd716d2t:
     - nome: "Garantia"
       valor: "3 anos limitada"
 
+      werca_w_e12:
+  nome: "Werca W-E12"
+  descricao: "Melhor torque de 3 níveis com carregador USB"
+  imagem: "/assets/images/posts/werca-w-e12.png"
+
+  links:
+    amazon: ""
+    mercadolivre: ""
+    shopee: ""
+
+  especificacoes:
+    - nome: "Marca"
+      valor: "Werca"
+    - nome: "Modelo"
+      valor: "W-E12"
+    - nome: "Alimentação / Voltagem"
+      valor: "10,8V (Bateria recarregável via USB)"
+    - nome: "Capacidade da Bateria"
+      valor: "2000 mAh"
+    - nome: "Rotação / RPM"
+      valor: "150 RPM (Constante)"
+    - nome: "Recursos de Torque"
+      valor: "Controle de 3 níveis"
+    - nome: "Peso Líquido"
+      valor: "1,05 kg"
+
 produto_exemplo:
   nome: "Nome e modelo do produto"
   descricao: "Descrição curta do produto"

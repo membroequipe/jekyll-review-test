@@ -1146,6 +1146,8 @@ details.toc-box[open] > summary::after {
     padding: clamp(24px, 4vw, 48px);
     background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
     box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.15);
+    border-radius: 16px; /* Arredonda todos os cantos */
+    overflow: hidden;    /* Garante que a imagem/degradê não saia do arredondamento */
 }
 
 .pc-hero-main > * {

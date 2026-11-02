@@ -14,6 +14,8 @@ A escolha da **melhor parafusadeira em 2026** deixa de ser uma decisão baseada 
 
 Neste guia definitivo, nossa equipe de analistas técnicos testou, comparou e ranqueou as **10 melhores parafusadeiras e furadeiras de impacto** disponíveis no varejo nacional (Amazon, Mercado Livre, Shopee e lojas oficiais), considerando especificações brutas, desempenho em cenários reais, disponibilidade de peças, rede de assistência técnica e relação entre investimento e entrega de valor. O resultado é um ranking segmentado por categoria de uso: **entrada/doméstico**, **uso frequente/marcenaria** e **profissional heavy duty**.
 
+
+
 {% include review-toc.html %}
 
 <div class="specs-table-wrapper">
@@ -154,6 +156,18 @@ O mandril de **aperto rápido 3/8" (10 mm)** aceita brocas e bits padrão, e a i
 </ul>
 </div>
 </div>
+
+
+{% assign teste_produto = site.data.produtos["bosch_gsr_1000_smart"] %}
+
+{% if teste_produto %}
+  <p>TESTE: Produto encontrado no YAML.</p>
+{% else %}
+  <p>TESTE: Produto NÃO encontrado no YAML.</p>
+{% endif %}
+
+{% include produto-card.html id="bosch_gsr_1000_smart" %}
+
 
 {% include produto-card.html id="bosch_gsr_1000_smart" %}
 

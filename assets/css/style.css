@@ -1096,11 +1096,26 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-hero-main {
-    display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+   /* Seus estilos de fundo atuais (degradê ou imagem) */
+    background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    background-size: cover;
+    background-position: center;
+    
+    /* Correção dos cantos */
+    border-radius: 16px; /* Arredonda todos os cantos */
+    overflow: hidden;    /* Garante que a imagem/degradê não saia do arredondamento */
+    
+    /* Se o bloco inferior branco for um elemento separado dentro deste container, 
+       ele vai respeitar o arredondamento. Se for um container atrás, 
+       certifique-se de que o background do pai seja transparente. */
+    
+    /* Layout (Flexbox para alinhar o texto à esquerda e o card à direita) */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 36px;
-    padding: clamp(24px, 4vw, 48px);
+    padding: 40px;
+    gap: 30px;
+    position: relative; /* Necessário se for usar elementos absolutos */
 }
 
 .pc-hero-main > * {

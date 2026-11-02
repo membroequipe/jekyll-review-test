@@ -1099,17 +1099,9 @@ details.toc-box[open] > summary::after {
    /* Seus estilos de fundo atuais (degradê ou imagem) */
     background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
     background-size: cover;
-    background-position: center;
-    
-    /* Correção dos cantos */
-    border-radius: 16px; /* Arredonda todos os cantos */
-    overflow: hidden;    /* Garante que a imagem/degradê não saia do arredondamento */
-    
-    /* Se o bloco inferior branco for um elemento separado dentro deste container, 
-       ele vai respeitar o arredondamento. Se for um container atrás, 
-       certifique-se de que o background do pai seja transparente. */
-    
-    /* Layout (Flexbox para alinhar o texto à esquerda e o card à direita) */
+    background-position: center;    
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;   
     display: flex;
     justify-content: space-between;
     align-items: center;

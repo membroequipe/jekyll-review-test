@@ -1144,6 +1144,13 @@ details.toc-box[open] > summary::after {
     align-items: center;
     gap: 36px;
     padding: clamp(24px, 4vw, 48px);
+    background: linear-gradient(
+        120deg,
+        #8b6914 0%,
+        #d4af37 40%,
+        #f5e6a8 60%,
+        #b8860b 100%
+    );
 }
 
 .pc-hero-main > * {

@@ -1100,6 +1100,16 @@ details.toc-box[open] > summary::after {
     align-items: center;
     gap: 36px;
     padding: clamp(24px, 4vw, 48px);
+   .hero-container {
+    background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 16px 0 0;     
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+}
 }
 
 .pc-hero-main > * {

@@ -1218,10 +1218,10 @@ details.toc-box[open] > summary::after {
 }
 
 .pc-action-primary {
-    background: #0a192f; /* Azul escuro/Preto */
-    color: #fcf6ba; /* Texto dourado claro */
-    font-weight: 700;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background: #ffffff;
+    color: #aa771c; /* O texto do botão fica no tom do ouro escuro */
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .pc-action-primary:hover {

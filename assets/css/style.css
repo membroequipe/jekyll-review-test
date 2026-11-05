@@ -2833,3 +2833,23 @@ details.toc-box[open] > summary::after {
         margin-bottom: 12px;
     }
 }
+
+
+/* =========================================
+   PÁGINA DE GUIAS
+   ========================================= */
+
+.guides-section-title {
+    margin-top: 2rem;
+}
+
+.guides-posts-grid {
+    margin-top: 1.5rem;
+}
+
+.guides-empty-state {
+    grid-column: 1 / -1;
+    color: #64748b;
+    text-align: center;
+    padding: 30px 0;
+}

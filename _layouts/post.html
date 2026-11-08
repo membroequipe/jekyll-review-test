@@ -16,7 +16,7 @@ layout: default
 
       {% if page.author %}
         <span class="post-meta-author">
-          Por {{ page.author | escape }}
+          Por <a href="{{ '/sobre/' | relative_url }}">{{ page.author | escape }}</a>
         </span>
       {% endif %}
 
@@ -82,6 +82,9 @@ layout: default
     {{ content }}
   </div>
 
+  {% include related-content.html %}
+
+
 </article>
 
 <!-- ======================================
@@ -95,6 +98,8 @@ layout: default
 
     // Artigos sem sumário continuam funcionando normalmente.
     if (!content || !tocList || !tocBox) return;
+
+    const tocToggle = document.getElementById("toc-toggle");
 
     // Confirma que a lista pertence à caixa do sumário.
     if (!tocBox.contains(tocList)) return;
@@ -209,5 +214,29 @@ layout: default
 
     tocBox.hidden = false;
     tocBox.style.display = "block";
+  });
+</script>
+
+<!-- Tabelas Markdown: rolagem horizontal sem alterar o conteúdo -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const content = document.getElementById("post-content");
+    if (!content) return;
+
+    content.querySelectorAll("table").forEach(function (table) {
+      const firstRow = table.querySelector("tr");
+      const columnCount = firstRow ? firstRow.children.length : 0;
+      if (columnCount === 2) table.classList.add("table-two-columns");
+
+      if (table.closest(".specs-table-wrapper, .competitors-table-wrapper, .concorrentes-table-wrapper, .table-wrapper")) return;
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "table-wrapper";
+      wrapper.setAttribute("role", "region");
+      wrapper.setAttribute("aria-label", "Tabela com rolagem horizontal");
+      wrapper.setAttribute("tabindex", "0");
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
   });
 </script>

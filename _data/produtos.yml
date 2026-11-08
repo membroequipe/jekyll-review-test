@@ -1359,7 +1359,7 @@ bosch_gsb_13_re_750w:
 makita_hp2050:
   nome: "Makita HP2050 720W"
   descricao: "Furadeira de impacto com fio de 720 W, duas velocidades mecânicas, mandril de 13 mm e capacidade de até 20 mm em concreto."
-  imagem: "/assets/images/posts/makita-hp2050.png"
+  imagem: "/assets/images/posts/makita-hp2050.webp"
   links:
     amazon: ""
     mercadolivre: "https://meli.la/1hURhNg"

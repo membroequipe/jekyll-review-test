@@ -2,24 +2,27 @@
 layout: default
 title: "Aviso de Afiliados"
 permalink: /aviso-de-afiliados/
-description: "Transparência sobre monetização e participação nos programas de afiliados da Amazon, Mercado Livre e Shopee."
+description: "Entenda como o Sua Melhor Ferramenta identifica links de afiliados e como comissões são tratadas editorialmente."
 ---
 
-# Divulgação de Links de Afiliados
+# Aviso de Afiliados
 
-A transparência é a base do nosso relacionamento com os leitores. Por isso, informamos abertamente como este portal é mantido financeiramente.
+O Sua Melhor Ferramenta pode utilizar links de afiliados em artigos, guias e comparativos. Quando um leitor clica em um desses links e realiza uma compra elegível, o site pode receber uma comissão da loja ou da plataforma.
 
-## Como Monetizamos o Site?
+## Como identificar um link de afiliado
 
-Participamos de programas de marketing de afiliados com grandes plataformas de e-commerce, incluindo o **Programa de Associados da Amazon**, o **Programa de Afiliados do Mercado Livre** e a **Shopee**.
+Links comerciais de afiliados devem aparecer em blocos ou botões identificados, acompanhados de um aviso de transparência. Nem todo link externo do site é necessariamente afiliado: referências a manuais, fabricantes e documentação técnica têm finalidade informativa.
 
-Isso significa que, quando você clica em um link de loja ou botão de oferta presente em nossas páginas e conclui uma compra, **podemos receber uma pequena comissão do varejista**.
+## A comissão altera a avaliação?
 
-### O Que Isso Significa para Você?
-* **Custo Zero Adicional:** Você **não paga absolutamente nada a mais** pelo produto ao comprar através de nossos links. O preço é exatamente o mesmo (e em muitos casos, inclui eventuais cupons ou promoções aplicáveis da loja).
-* **Independência Editorial:** A comissão paga pelas lojas parceiras não influencia nossas avaliações. As limitações, pontos fracos e ressalvas de cada produto são expostos sem hesitação.
-* **Manutenção do Projeto:** Essa remuneração nos permite manter o site no ar, atualizar os preços e continuar produzindo comparativos técnicos detalhados e gratuitos.
+Não. A possibilidade de receber comissão não determina a nota, a conclusão ou a recomendação editorial. Os pontos positivos e as limitações devem ser apresentados de acordo com as informações e os critérios descritos na página [Como Pesquisamos e Analisamos]({{ '/como-pesquisamos/' | relative_url }}).
 
----
+## O preço muda por causa do link?
 
-*Declaração oficial: Como participantes de programas de afiliados, a Equipe de Análises é remunerada por compras qualificadas realizadas através dos links disponibilizados no site.*
+A comissão de afiliado normalmente não representa uma cobrança adicional ao comprador, mas o preço final, o frete, os cupons, as condições de pagamento e a disponibilidade são definidos pela loja e podem mudar. Confira os detalhes diretamente na página do vendedor antes de concluir a compra.
+
+## Responsabilidade pela compra
+
+A loja é responsável pelo processamento do pedido, pagamento, entrega, garantia, troca e atendimento pós-venda. Recomendamos conferir a identificação do vendedor, a descrição da variante, o conteúdo da embalagem e as condições comerciais antes de comprar.
+
+Para dúvidas ou para comunicar um problema com um link, utilize a página de [Contato]({{ '/contato/' | relative_url }}).

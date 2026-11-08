@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Política de Privacidade"
+description: "Saiba como o site Sua Melhor Ferramenta trata dados de navegação, privacidade, cookies e informações fornecidas pelos visitantes."
 permalink: /politica-de-privacidade/
 ---
 

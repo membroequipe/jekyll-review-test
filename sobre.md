@@ -1,24 +1,38 @@
 ---
 layout: default
-title: "Sobre Nós"
+title: "Sobre o Sua Melhor Ferramenta"
 permalink: /sobre/
-description: "Conheça a proposta da nossa Equipe de Análises: guias de compra imparciais e comparativos técnicos diretos sobre parafusadeiras e ferramentas."
+description: "Conheça o Sua Melhor Ferramenta, um site editorial de guias, comparativos e análises documentais de ferramentas."
 ---
 
-# Sobre o Guia Especializado
+# Sobre o Sua Melhor Ferramenta
 
-Seja bem-vindo ao nosso portal. Somos uma **Equipe de Análises Técnicas** dedicada a ajudar consumidores, marceneiros, hobbistas e profissionais a encontrarem as ferramentas certas para cada tipo de projeto.
+O **Sua Melhor Ferramenta** é um site editorial dedicado a ajudar consumidores, profissionais e pessoas que fazem reparos em casa a entender as diferenças entre furadeiras, parafusadeiras e acessórios.
 
-Sabemos que escolher uma parafusadeira ou furadeira pode ser uma tarefa frustrante diante de tantas opções de voltagem (12V vs 20V), variações de torque (Nm) e termos técnicos como motores *brushless* ou baterias de íon-lítio. Além disso, anúncios de fabricantes nem sempre deixam claras as reais limitações de cada modelo.
+Nosso objetivo é explicar as características que influenciam a escolha: aplicação, torque, rotação, tipo de encaixe, alimentação, bateria, ergonomia, acessórios, limitações e custo total da configuração.
 
-O nosso objetivo é cortar o excesso de marketing e entregar **informações diretas, organizadas e úteis** para que você tome decisões de compra seguras e sem surpresas desagradáveis.
+## Quem produz o conteúdo
 
----
+Os artigos são publicados sob a assinatura **Equipe de Análises**, que representa a equipe editorial responsável pela pesquisa, redação, revisão e atualização do conteúdo do site.
 
-## O Nosso Compromisso Editorial
+Essa assinatura coletiva não deve ser interpretada como certificação profissional, laboratório de ensaios ou declaração de que cada artigo foi escrito por engenheiro ou técnico credenciado. Credenciais individuais só serão informadas quando forem reais, relevantes e verificáveis.
 
-1. **Transparência Absoluta:** Mostramos não apenas os pontos fortes, mas também as limitações e reclamações frequentes de cada máquina.
-2. **Foco na Aplicação Prática:** Ajudamos você a entender qual modelo atende à sua necessidade específica, seja para montar móveis de MDF, furar paredes de tijolo ou uso doméstico ocasional.
-3. **Dados Unificados:** Todas as especificações técnicas apresentadas em nossas tabelas passam por uma checagem rigorosa com base nos manuais e fichas dos fabricantes.
+## Como trabalhamos
 
-Se você quiser entender em detalhes como estruturamos nossas avaliações, visite a nossa página [Como Pesquisamos e Analisamos]({{ '/como-pesquisamos/' | relative_url }}).
+- Consultamos páginas oficiais, manuais, catálogos e documentação dos fabricantes.
+- Conferimos códigos de modelo, versões, tensões, baterias e conteúdo de kits sempre que a documentação permite.
+- Comparamos recursos e limitações com foco na aplicação indicada.
+- Identificamos quando uma análise é documental e quando houve teste físico. Não afirmamos ter testado uma ferramenta quando isso não aconteceu.
+- Indicamos fontes e critérios para que o leitor possa conferir informações relevantes.
+
+Conheça [Como Pesquisamos e Analisamos]({{ '/como-pesquisamos/' | relative_url }}) e nossa [Política Editorial]({{ '/politica-editorial/' | relative_url }}).
+
+## Independência e transparência
+
+O site pode utilizar links de afiliados. Quando isso ocorrer, a identificação será apresentada junto ao conteúdo ou aos links comerciais. Uma eventual comissão não determina a conclusão editorial, a nota ou a ordem das recomendações.
+
+O Sua Melhor Ferramenta não representa fabricantes, não é assistência técnica autorizada e não substitui os manuais, as orientações de segurança ou o suporte oficial das marcas.
+
+## Correções e contato
+
+Se encontrar uma informação incorreta, desatualizada ou ambígua, envie a referência e o trecho correspondente pela página de [Contato]({{ '/contato/' | relative_url }}). Avaliaremos a solicitação e corrigiremos o conteúdo quando necessário.

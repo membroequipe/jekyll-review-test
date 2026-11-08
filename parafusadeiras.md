@@ -1,60 +1,55 @@
 ---
 layout: default
-title: "Guia Completo de Parafusadeiras"
-description: "Tudo o que você precisa saber para escolher a parafusadeira ideal para marcenaria, montagem de móveis e uso doméstico."
+title: "Parafusadeiras: modelos, reviews e guias de compra"
+description: "Conheça parafusadeiras compactas, de impacto e para drywall. Compare encaixes, torque, aplicações, limites e análises de modelos."
 permalink: /parafusadeiras/
 ---
 
-<style>
-  /* Ajuste cirúrgico do título no Mobile para esta página */
-  @media (max-width: 768px) {
-    .page-header h1, 
-    .category-container h1,
-    h1 {
-      font-size: 1.6rem !important;
-      line-height: 1.25 !important;
-    }
-  }
-</style>
-
 <div class="site-content">
-  <div class="post-content">
+  <div class="post-content category-hub">
+    <h1>Parafusadeiras: escolha pelo tipo de trabalho</h1>
+    <p>Nem toda parafusadeira é igual. Há modelos compactos para montagem leve, parafusadeiras de impacto para fixadores mais exigentes e máquinas específicas para instalação de drywall. Esta página organiza reviews documentais e guias por aplicação, sem confundir essas ferramentas com furadeiras/parafusadeiras de mandril.</p>
+    <p>Para conhecer modelos que também perfuram com mandril, consulte a categoria de <a href="{{ '/furadeiras/' | relative_url }}">furadeiras e furadeiras/parafusadeiras</a>. Para decisões entre modelos, veja ainda nossos <a href="{{ '/comparativos/' | relative_url }}">comparativos</a>.</p>
 
-    <h1>Parafusadeiras: como escolher a ideal</h1>
-    <p>Encontre análises, comparativos e guias de compra para escolher a parafusadeira certa para o seu tipo de trabalho, garantindo durabilidade e o melhor custo-benefício.</p>
+    <nav class="category-jump-links" aria-label="Tipos de parafusadeiras">
+      <a href="#parafusadeiras-compactas">Compactas 3,6 V</a>
+      <a href="#parafusadeiras-impacto">De impacto</a>
+      <a href="#parafusadeiras-drywall">Para drywall</a>
+      <a href="#guias-parafusadeiras">Guias de compra</a>
+      <a href="{{ '/furadeiras/' | relative_url }}">Furadeiras/parafusadeiras</a>
+    </nav>
 
-    <!-- VITRINE DINÂMICA DE ARTIGOS E COMPARATIVOS -->
-    <h2 id="artigos-relacionados" style="margin-top: 2rem;">Análises e Comparativos de Parafusadeiras</h2>
-    <p>Explore nossos artigos detalhados com testes práticos para decidir qual modelo levar para casa:</p>
-    
-    <div class="reviews-grid" style="margin-top: 1.5rem;">
-      {% assign parafusadeiras_posts = site.posts | where_exp: "post", "post.category == 'parafusadeiras' or post.categories contains 'parafusadeiras'" %}
-      
-      {% if parafusadeiras_posts.size > 0 %}
-        {% for post in parafusadeiras_posts %}
-          <article class="review-card" style="border: 1px solid var(--border-color, #e2e8f0); border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: transform 0.2s ease;">
-            <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: block;">
-              
-              <!-- Exibe a imagem APENAS se ela existir no front matter -->
-              {% if post.image and post.image != "" %}
-                <div class="review-card-img" style="width: 100%; height: 160px; overflow: hidden; background: #f8fafc;">
-                  <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                </div>
-              {% endif %}
+    <section>
+      <h2>Como diferenciar parafusadeiras e furadeiras/parafusadeiras</h2>
+      <p>Uma parafusadeira dedicada prioriza o aperto de parafusos e pode ter encaixe sextavado de 1/4 de polegada, sem mandril convencional para brocas. Já uma furadeira/parafusadeira combina mandril, perfuração e controle de torque. A escolha deve considerar o tipo de fixador, material e frequência de uso.</p>
+      <p><strong>Atenção:</strong> parafusadeira de impacto e furadeira de impacto não são a mesma ferramenta. A parafusadeira de impacto aplica golpes rotacionais para apertar fixadores; a furadeira de impacto usa percussão axial para auxiliar na perfuração de alvenaria.</p>
+    </section>
 
-              <div class="review-content" style="padding: 16px;">
-                <span class="review-badge" style="font-size: 0.72rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.5px;">{{ post.categories | join: " / " | default: "Parafusadeiras" }}</span>
-                <h3 class="review-card-title" style="font-size: 1.05rem; margin: 6px 0 0 0; color: #0f172a; line-height: 1.35; font-weight: 700;">{{ post.title }}</h3>
-                <div class="review-date" style="font-size: 0.78rem; color: #94a3b8; margin-top: 10px;">Por {{ post.author | default: "Equipe de Análises" }} • {{ post.date | date: "%d/%m/%Y" }}</div>
-              </div>
-            </a>
-          </article>
-        {% endfor %}
-      {% else %}
-        <p style="grid-column: 1 / -1; color: #64748b; text-align: center; padding: 30px 0;">Em breve novos artigos publicados.</p>
-      {% endif %}
-      
-    </div>
+    <section id="parafusadeiras-compactas">
+      <h2>Parafusadeiras compactas de 3,6 V</h2>
+      <p>Indicadas para montagem leve, pequenos reparos e parafusos menores. O formato, o peso, o encaixe, o controle de torque e a bateria integrada são pontos importantes. Não substituem uma furadeira/parafusadeira para perfuração.</p>
+      {% include category-cards.html subcategoria="parafusadeiras-compactas" badge="Parafusadeira compacta" %}
+    </section>
 
+    <section id="parafusadeiras-impacto">
+      <h2>Parafusadeiras de impacto</h2>
+      <p>Utilizam impacto rotacional e encaixe sextavado, geralmente de 1/4 de polegada, para trabalhar com fixadores mais exigentes. Exigem bits adequados e controle cuidadoso para não danificar parafusos, peças ou roscas.</p>
+      {% include category-cards.html subcategoria="parafusadeiras-impacto" badge="Parafusadeira de impacto" %}
+    </section>
+
+    <section id="parafusadeiras-drywall">
+      <h2>Parafusadeiras para drywall</h2>
+      <p>São projetadas para instalação de placas de gesso acartonado, com alta rotação, controle de profundidade e, em alguns modelos, compatibilidade com alimentador automático de parafusos. Não são a escolha padrão para montagem geral de móveis.</p>
+      {% include category-cards.html subcategoria="parafusadeiras-drywall" badge="Parafusadeira drywall" %}
+    </section>
+
+    <section id="guias-parafusadeiras">
+      <h2>Como escolher uma parafusadeira dedicada</h2>
+      <p>Para escolher entre modelos compactos, de impacto rotacional e para drywall, comece pela aplicação, pelo tipo de encaixe e pelo controle de aperto. Os reviews organizados acima mostram as diferenças e limitações de cada categoria.</p>
+      <p>Alguns guias populares com a palavra “parafusadeira” no título comparam ferramentas que também perfuram e possuem mandril. Para esses modelos combinados, consulte os <a href="{{ '/furadeiras/' | relative_url }}#guias-furadeiras">guias de furadeiras/parafusadeiras</a>.</p>
+    </section>
+
+    <p>As publicações desta categoria apresentam análises documentais baseadas nas fontes técnicas indicadas em cada artigo. Não representam testes físicos independentes, salvo quando isso estiver expressamente informado.</p>
+    <p>Se a sua necessidade inclui perfuração com mandril, consulte também <a href="{{ '/furadeiras/' | relative_url }}">Furadeiras e furadeiras/parafusadeiras</a>.</p>
   </div>
 </div>

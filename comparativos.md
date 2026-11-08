@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Guias Comparativos e Melhores Opções"
+description: "Comparativos entre parafusadeiras e furadeiras de várias marcas."
 permalink: "/comparativos/"
 ---
 
@@ -20,7 +21,13 @@ permalink: "/comparativos/"
   <div class="post-content">
 
     <h1>Guias Comparativos e Melhores Opções</h1>
-    <p>Confira nossos guias completos e comparações lado a lado para encontrar o produto ideal para o seu perfil e orçamento.</p>
+    <p>Confira comparações lado a lado para entender diferenças de aplicação, recursos, versões e kits. Quando um comparativo aborda um modelo que também possui review individual, use os links entre os conteúdos para aprofundar a decisão.</p>
+    <nav class="category-jump-links" aria-label="Categorias de ferramentas">
+      <a href="{{ '/furadeiras/' | relative_url }}">Furadeiras</a>
+      <a href="{{ '/parafusadeiras/' | relative_url }}">Parafusadeiras</a>
+      <a href="{{ '/guias/' | relative_url }}">Guias de compra</a>
+    </nav>
+    <p>Antes de comparar, identifique a categoria: <a href="{{ '/furadeiras/' | relative_url }}">furadeiras e furadeiras/parafusadeiras</a> atendem quem também precisa perfurar; <a href="{{ '/parafusadeiras/' | relative_url }}">parafusadeiras dedicadas</a> são voltadas ao parafusamento e incluem modelos compactos, de impacto rotacional e para drywall.</p>
 
     <!-- VITRINE DINÂMICA DE COMPARATIVOS -->
     <h2 id="artigos-relacionados" style="margin-top: 2rem;">Todos os Comparativos</h2>

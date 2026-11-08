@@ -1,0 +1,15 @@
+{% assign affiliate_has_link = false %}
+{% if include.links.amazon and include.links.amazon != "" %}
+  {% assign affiliate_has_link = true %}
+{% endif %}
+{% if include.links.mercadolivre and include.links.mercadolivre != "" %}
+  {% assign affiliate_has_link = true %}
+{% endif %}
+{% if include.links.shopee and include.links.shopee != "" %}
+  {% assign affiliate_has_link = true %}
+{% endif %}
+{% if affiliate_has_link %}
+  <p class="affiliate-disclosure">
+    Este artigo contém links de afiliados. Se você comprar por meio deles, o site poderá receber uma comissão, sem custo adicional para você. Isso não altera nossa avaliação editorial.
+  </p>
+{% endif %}

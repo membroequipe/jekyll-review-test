@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Reviews e Análises Detalhadas"
+title: "Reviews de Furadeiras e Parafusadeiras"
+description: "Encontre análises documentais de furadeiras, furadeiras/parafusadeiras e parafusadeiras dedicadas, organizadas por categoria."
 permalink: "/reviews/"
 ---
 
@@ -106,40 +107,55 @@ permalink: "/reviews/"
 
 <div class="reviews-container">
   <div class="reviews-header">
-    <h1>Reviews e Análises Detalhadas</h1>
-    <p>Avaliações completas e fichas técnicas para decidir com segurança.</p>
+    <h1>Reviews de Furadeiras e Parafusadeiras</h1>
+    <p>Explore análises técnicas documentais, limitações e orientações de compra. Escolha primeiro a categoria da ferramenta.</p>
   </div>
 
-  <div class="reviews-grid">
-    {% assign has_reviews = false %}
-    {% for post in site.posts %}
-      {% assign post_cats = post.categories | downcase %}
-      {% assign post_cat = post.category | downcase %}
-      
-      {% if post_cat == "reviews" or post_cats contains "reviews" %}
-        {% assign has_reviews = true %}
-        <article class="review-card">
-          <a href="{{ post.url | relative_url }}">
-            <div class="review-img-wrapper">
-              <img src="{{ post.image | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title }}" loading="lazy" onerror="this.onerror=null; this.src='{{ '/assets/images/logo.png' | relative_url }}';">
-            </div>
-            <div class="review-content">
-              <span class="review-badge">Reviews</span>
-              <h2>{{ post.title }}</h2>
-              {% if post.description %}
-                <p>{{ post.description }}</p>
-              {% endif %}
-              <div class="review-date">
-                Por {{ post.author | default: "Equipe de Análises" }} • {{ post.date | date: "%d/%m/%Y" }}
+  <section aria-labelledby="reviews-furadeiras">
+    <h2 id="reviews-furadeiras">Furadeiras e furadeiras/parafusadeiras</h2>
+    <p>Modelos com mandril para perfuração e, conforme a versão, função de parafusamento e impacto. <a href="{{ '/furadeiras/' | relative_url }}">Ver categoria de furadeiras</a>.</p>
+    <div class="reviews-grid">
+      {% for post in site.posts %}
+        {% if post.categories contains "furadeiras" and post.categories contains "reviews" and post.category != "comparativos" %}
+          <article class="review-card">
+            <a href="{{ post.url | relative_url }}">
+              <div class="review-img-wrapper">
+                <img src="{{ post.image | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
               </div>
-            </div>
-          </a>
-        </article>
-      {% endif %}
-    {% endfor %}
-  </div>
+              <div class="review-content">
+                <span class="review-badge">Furadeira / furadeira-parafusadeira</span>
+                <h2>{{ post.title | escape }}</h2>
+                {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+                <div class="review-date">Por {{ post.author | default: "Equipe de Análises" }} • {{ post.date | date: "%d/%m/%Y" }}</div>
+              </div>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
 
-  {% if has_reviews == false %}
-    <p>Nenhum review publicado no momento.</p>
-  {% endif %}
+  <section aria-labelledby="reviews-parafusadeiras" style="margin-top: 3rem;">
+    <h2 id="reviews-parafusadeiras">Parafusadeiras dedicadas</h2>
+    <p>Modelos compactos, de impacto rotacional e para drywall. <a href="{{ '/parafusadeiras/' | relative_url }}">Ver categoria de parafusadeiras</a>.</p>
+    <div class="reviews-grid">
+      {% for post in site.posts %}
+        {% if post.categories contains "parafusadeiras" and post.categories contains "reviews" and post.category != "comparativos" %}
+          <article class="review-card">
+            <a href="{{ post.url | relative_url }}">
+              <div class="review-img-wrapper">
+                <img src="{{ post.image | default: '/assets/images/logo.png' | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+              </div>
+              <div class="review-content">
+                <span class="review-badge">Parafusadeira dedicada</span>
+                <h2>{{ post.title | escape }}</h2>
+                {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+                <div class="review-date">Por {{ post.author | default: "Equipe de Análises" }} • {{ post.date | date: "%d/%m/%Y" }}</div>
+              </div>
+            </a>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
 </div>

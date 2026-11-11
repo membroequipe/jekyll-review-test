@@ -92,7 +92,183 @@ description: "Descubra a melhor parafusadeira e furadeira para 2026. Comparativo
     </div>
   </section>
 
-  <!-- O restante do arquivo permanece exatamente igual -->
-  <!-- ... seções de situações, últimas publicações e metodologia ... -->
+  <!-- ======================================
+       NAVEGAÇÃO POR NECESSIDADE
+       ====================================== -->
+  <section
+    class="pc-situations"
+    aria-labelledby="pc-situation-title"
+  >
+    <p class="pc-section-kicker">
+      Encontre seu caminho
+    </p>
 
-</div>
+    <h2 id="pc-situation-title">
+      Para que você vai usar a ferramenta?
+    </h2>
+
+    <p class="pc-situations-intro">
+      Selecione sua necessidade e descubra quais características
+      procurar em uma parafusadeira ou furadeira.
+    </p>
+
+    <div class="pc-situation-grid">
+
+      <!-- Montagem de móveis -->
+      <a
+        class="pc-situation-card"
+        href="{{ '/melhores-parafusadeiras-para-montagem-de-moveis-e-mdf/' | relative_url }}"
+      >
+        <span class="pc-situation-icon" aria-hidden="true">🪑</span>
+
+        <span class="pc-situation-copy">
+          <b>Quero Montar Móveis e MDF</b>
+          <small>Controle de torque e cuidado com as peças.</small>
+        </span>
+      </a>
+
+      <!-- Reparos e manutenção: destino original preservado -->
+      <a
+        class="pc-situation-card"
+        href="{{ '/ferramentas-para-reparos-em-casa/' | relative_url }}"
+      >
+        <span class="pc-situation-icon" aria-hidden="true">🏠</span>
+
+        <span class="pc-situation-copy">
+          <b>Preciso Fazer Reparos em Casa</b>
+          <small>Versatilidade para tarefas do dia a dia.</small>
+        </span>
+      </a>
+
+      <!-- Perfuração de alvenaria -->
+      <a
+        class="pc-situation-card"
+        href="{{ '/melhores-furadeiras-impacto-alvenaria-concreto/' | relative_url }}"
+      >
+        <span class="pc-situation-icon" aria-hidden="true">🧱</span>
+
+        <span class="pc-situation-copy">
+          <b>Preciso Trabalhar Com Alvenaria</b>
+          <small>Entenda quando é necessário impacto.</small>
+        </span>
+      </a>
+
+      <!-- Opções econômicas -->
+      <a
+        class="pc-situation-card"
+        href="{{ '/melhores-parafusadeiras-baratas-ate-300-reais/' | relative_url }}"
+      >
+        <span class="pc-situation-icon" aria-hidden="true">💰</span>
+
+        <span class="pc-situation-copy">
+          <b>Tenho Até R$ 300 Para Investir</b>
+          <small>Priorize os recursos que valem o investimento.</small>
+        </span>
+      </a>
+
+      <!-- Primeira ferramenta -->
+      <a
+        class="pc-situation-card"
+        href="{{ '/guias/primeira-parafusadeira-qual-comprar-guia-iniciantes/' | relative_url }}"
+      >
+        <span class="pc-situation-icon" aria-hidden="true">🧰</span>
+      
+        <span class="pc-situation-copy">
+          <b>Quero Minha Primeira Ferramenta</b>
+          <small>O essencial para começar sem complicação.</small>
+        </span>
+      </a>
+
+      <!-- Ergonomia -->
+      <a
+        class="pc-situation-card"
+        href="{{ '/melhores-parafusadeiras-leves-12v/' | relative_url }}"
+      >
+        <span class="pc-situation-icon" aria-hidden="true">🪶</span>
+
+        <span class="pc-situation-copy">
+          <b>Ferramentas Leves e Confortáveis</b>
+          <small>Mais ergonomia para trabalhos prolongados.</small>
+        </span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ======================================
+       ÚLTIMAS PUBLICAÇÕES
+       ====================================== -->
+  <section
+    class="pc-latest"
+    aria-labelledby="pc-latest-title"
+  >
+    <h2 class="section-header-title" id="pc-latest-title">
+      Últimas publicações e reviews
+    </h2>
+
+    {% if site.posts.size > 0 %}
+
+      <div class="home-posts-grid">
+        {% for post in site.posts limit: 6 %}
+
+          {% assign card_category = post.category | default: post.categories.first %}
+          {% assign card_author = post.author | default: "Equipe de Análises" %}
+
+          <article
+            class="home-post-card"
+            aria-labelledby="home-post-title-{{ forloop.index }}"
+          >
+
+            <a
+              href="{{ post.url | relative_url }}"
+              class="home-post-img-link"
+              aria-label="{{ post.title | escape }}"
+            >
+              {% if post.image %}
+                <img
+                  src="{{ post.image | relative_url }}"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  data-fallback="{{ '/assets/images/logo.png' | relative_url }}"
+                  onerror="this.onerror=null; this.classList.add('home-post-image-fallback'); this.src=this.dataset.fallback;"
+                >
+              {% else %}
+                <img
+                  src="{{ '/assets/images/logo.png' | relative_url }}"
+                  alt=""
+                  class="home-post-image-fallback"
+                  loading="lazy"
+                  decoding="async"
+                >
+              {% endif %}
+            </a>
+
+            <div class="home-post-body">
+
+              {% if card_category and card_category != empty %}
+                <span class="home-post-badge">
+                  {{ card_category | escape }}
+                </span>
+              {% endif %}
+
+              <h3
+                class="home-post-title"
+                id="home-post-title-{{ forloop.index }}"
+              >
+                <a href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+
+              <div class="home-post-date">
+                <span class="home-post-author">
+                  Por {{ card_author | escape }}
+                </span>
+
+                <span aria-hidden="true"> · </span>
+
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%d/%m/%Y" }}
+                </time>
+              </div
